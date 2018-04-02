@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\PagesController;
+
+app('App\Http\Controllers\PagesController')->GetIndex('name', 'asd');
